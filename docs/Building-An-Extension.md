@@ -17,8 +17,7 @@ basic Haskell working environment if we're going to get anywhere. This guide
 assumes at least a basic familiarity with both Haskell &
 [Stack](http://seanhess.github.io/2015/08/04/practical-haskell-getting-started.html).
 Go ahead and install Stack now, I'll wait! (Psst! I'd recommend
-`brew update && brew install haskell-stack`). Make sure you run `stack setup`
-before we get started.
+`brew update && brew install haskell-stack`). 
 
 You'll also want to install 'nix' which is a tool which stack uses to guarantee
 reproducible builds. You can find installation instructions for nix
@@ -26,7 +25,8 @@ reproducible builds. You can find installation instructions for nix
 
 Okay, so first clone the Rasa repository; go to your favourite project's
 directory and run `git clone https://github.com/ChrisPenner/rasa`; this will
-create a new `rasa` directory, go ahead and `cd rasa` into there.
+create a new `rasa` directory, go ahead and `cd rasa` into there. Make sure you
+run `stack setup` inside the `rasa` directory before we get started.
 
 Instead of going through the trouble of making a new package for our extension,
 we'll just build the new functionality into our user-config. You can extract it
